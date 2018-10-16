@@ -145,7 +145,7 @@ def fft_gtgram(signal,samplerate=16000,winlen=0.025,winstep=0.01,
 
     result = gt_weights.dot(np.abs(sgram)) / nfft
 
-    return result
+    return np.transpose(result)
 
 # def fft_gtgram(
 #     wave,
